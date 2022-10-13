@@ -16,7 +16,7 @@ function sobre() {
 
 function projetos() {
     window.scrollTo({
-        top: 700,
+        top: 750,
         left: 0,
         behavior: 'smooth'
     });
@@ -24,7 +24,7 @@ function projetos() {
 
 function conhecimentos() {
     window.scrollTo({
-        top: 1500,
+        top: 1700,
         left: 0,
         behavior: 'smooth'
     });
@@ -32,7 +32,7 @@ function conhecimentos() {
 
 function educacao() {
     window.scrollTo({
-        top: 1990,
+        top: 2200,
         left: 0,
         behavior: 'smooth'
     });
