@@ -1,0 +1,1 @@
+window.alert('Página em manutenção ! Este é somente o protótipo')

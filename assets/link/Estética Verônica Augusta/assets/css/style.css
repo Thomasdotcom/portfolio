@@ -1,0 +1,170 @@
+
+/* ==================== GERAL =============== */
+
+:root {
+    --font-color-001:
+    --font-color-002:
+    --font-color-003:
+    --font-color-004:
+    --font-color-005:
+    --bg-color-001:
+    --bg-color-002:
+    --bg-color-003:
+    --bg-color-004:
+    --bg-color-005:
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-size: 3em;
+    color: var();
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: var();
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h3 {
+    font-size: 2em;
+    color: var();
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h4 {
+    font-size: 1.5em;
+    color: var();
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+/* ==================== HEADER =============== */
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95vw;
+    border-bottom: 1px solid #000;
+}
+
+.header-menu--logo {
+    display: flex;
+    color: #000;
+}
+
+.header-menu--nav {
+    display: flex;
+}
+
+.header-menu--nav ul {
+    display: flex;
+}
+
+.header-menu--nav ul,
+.header-menu--nav li {
+    font-size: 1em;
+    list-style: none;
+}
+
+.header-menu--nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 5vh;
+    color: var();
+    color: #000;
+}
+
+.header-menu--nav a:hover {
+    border-bottom: 1px solid #000;
+}
+
+/* ==================== MAIN PAGE =============== */
+/* ============ MAIN PAGE 001 */
+
+#main-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-page--001 {
+    display: flex;
+    width: 95vw;
+    height: 90vh;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: pink;
+}
+
+.quote--001 {
+    display: block;
+    width: 35vw;
+    background-color: blue;
+}
+
+.quote--001 span {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.image--001 {
+    display: flex;
+    background-color: green;
+}
+
+/* ============ MAIN PAGE 002 */
+
+.main-page--002 {
+    display: flex;
+    align-items: center;
+    background-color: var();
+}
+
+.services--002 {
+    display: grid;
+    width: 95vw;
+    height: 25vh;
+    padding: 2%;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "grid--002--1 grid--002--2 grid--002--3";
+    gap: 3%;
+    background-color: aquamarine;
+}
+
+.grid--002--1 {
+    grid-area: grid--002--1;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.grid--002--2 {
+    grid-area: grid--002--2;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.grid--002--3 {
+    grid-area: grid--002--3;
+    border: 1px solid #000;  
+    text-align: center;
+}
+

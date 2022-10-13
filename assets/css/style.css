@@ -1,0 +1,422 @@
+* {
+    padding: 0rem;
+    margin: 0rem;
+}
+
+html {
+    background-color: #1e1e1e;
+    color: #fff;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+}
+
+footer,
+section {
+    padding: 4.5rem;
+    max-width: 96rem;
+    margin: 0rem auto;
+}
+
+footer {
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    padding: 3rem 0rem;
+}
+
+h3 {
+    padding: 1rem 0rem;
+    text-transform: uppercase;
+}
+
+/* h4 {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: normal;
+} */
+
+h6 {
+    /* padding: 0.3rem 0rem; */
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    padding-bottom: 2rem;
+    color: #000;
+}
+
+ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.itens-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    padding: 1rem 4rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+/* .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-itens {
+    border-bottom: 0.5rem solid transparent;
+} */
+
+/* .nav-itens:hover {
+    border-bottom: 0.5rem solid #0039cc;
+} */
+
+.underline {
+    font-size: 1.5rem;
+    color: #f5f5f5;
+    position: relative;
+    padding-bottom: 0.8rem;
+    margin: 0.8rem 0rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.underline::before,
+.underline::after {
+    content: '';
+    background-color:#f5f5f5;
+    position: absolute;
+    bottom: 0rem;
+    height: 0.2rem;
+}
+
+.from-middle::before {
+    right: 50%;
+}
+
+.from-middle::after {
+    left: 50%;
+}
+
+.from-middle:hover::after,
+.from-middle:hover::before {
+    animation:  
+        add-underline--from-middle 0.5s 0.1s forwards;
+}
+
+.from-middle:hover:not(:hover)::before,
+.from-middle:hover:not(:hover)::after {
+    animation:
+        remove-underline--from-middle 0.5s 0s forwards;
+}
+
+@keyframes add-underline--from-middle {
+    from {width: 0%;}
+    to {width: 50%;}
+}
+
+@keyframes remove-underline--from-middle {
+    from {width: 50%;}
+    to {width: 0%;}
+}
+
+.main-avatar {
+    width: 40rem;
+    height: 25rem;
+    border-radius: 50%;
+    margin-right: 20rem;
+    border: 0.1rem solid #1e1e1e;
+    box-shadow: 0rem 0rem 0.1rem 0.1rem #0039cc;
+}
+
+.main-avatar:hover {
+    border: 0.1rem solid #0039cc;
+    box-shadow: 0rem 0rem 0.9rem 0.2rem #0039cc;
+    transition: .5s;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(50px);
+    width: 72rem;
+    height: 12rem;
+    padding: 5rem;
+    border-radius: 2rem;
+}
+
+.main-title {
+    font-size: 3rem;
+}
+
+.main-description {
+    margin: 2rem 0rem;
+    padding-bottom: 2rem;
+}
+
+.main-button {
+    border-radius: 0.2rem;
+    background-color: #0039cc;
+    padding: 1rem 2rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.6rem;
+    border: 1px solid #0039cc;
+    box-shadow: 0rem 0rem 0rem #0039cc;
+}
+
+.main-button:hover {
+    border: 1px solid #0039cc;
+    box-shadow: 0rem 0rem 1.5rem 0.3rem #0039cc;
+    transition: .3s;
+}
+
+.about {
+    background-color: #162340;
+}
+
+.project {
+    margin: 4rem 0rem;
+    border: 0.2rem solid #1e1e1e;
+    border-radius: 0.6rem;
+}
+
+.project-image {
+    width: 24rem;
+    height: 18rem;
+    margin-right: 2.5rem;
+    border-radius: 0.6rem;
+}
+
+.project-title {
+    font-size: 2.5rem;
+}
+
+.project-button {
+    border-radius: 0.2rem;
+    background-color: #0039cc;
+    padding: 0.9rem 2rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3rem;
+    border: 1px solid #0039cc;
+    box-shadow: 0rem 0rem 0rem #0039cc;
+}
+
+.project-button:hover {
+    border: 1px solid #0039cc;
+    box-shadow: 0rem 0rem 1.5rem 0.3rem #0039cc;
+    transition: .3s;
+}
+
+.project-description {
+    margin-bottom: 2rem;
+}
+
+.footer-social {
+    display: block;
+    margin: 4rem 0rem;
+}
+
+.conhecimentos-lista {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.conhecimentos-img {
+    width: 3vw;
+    height: 4vh;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1rem;
+}
+
+.educacao {
+    height: 60vh;
+}
+
+.gap-itens {
+    padding-bottom: 6rem;
+}
+
+.estudos-card {
+    display: flex;
+    align-items: center;
+}
+
+.estudos-card-design {
+    width: 17vw;
+    height: 4vh;
+    padding: 1rem 1rem;
+    background-color: #fff;
+    color: #1e1e1e;
+    margin: 1rem 1rem;
+    border-radius: 0.6rem;
+}
+
+.estudos-card-design:hover {
+    color: #000;
+    height: 22vh;
+    transition: .5s;
+}
+
+.estudos-espaco {
+    padding-bottom: 1rem;
+}
+
+.footer-img {
+    width: 4rem;
+    height: 4rem;
+    padding: 0rem 0.5rem;
+}
+
+.footer-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width: 1200px) {
+    .itens-center {
+        flex-direction: column;
+    }
+
+    footer, 
+    section {
+        padding: 5rem;
+    }
+
+    .nav {
+        padding: 1rem 4rem;
+    }
+    
+    .nav-links {
+        display: block;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+
+    .main {
+        margin-bottom: 2rem;
+    }
+
+    .main-about {
+        padding: 30vh 0vw;
+        line-height: 2.5rem;
+    }
+
+    .main-title {
+        font-size: 3rem;
+    }
+
+    .main-button {
+        border-radius: 0.2rem;
+        background-color: #0039cc;
+        padding: 1rem 1rem;
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.6rem;
+        border: 1px solid #0039cc;
+        box-shadow: 0rem 0rem 0rem #0039cc;
+    }
+
+    .glass {
+        background: #1e1e1e;
+        backdrop-filter: blur(50px);
+        width: 20rem;
+        height: 12rem;
+        padding: 5rem;
+    }
+
+    .project-image {
+        width: 38rem;
+        height: auto;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+
+    .main-avatar {
+        margin-right: 0rem;
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .conhecimentos-lista {
+        display: block;
+        align-content: center;
+        justify-content: space-evenly;
+    }
+
+    .educacao {
+        height: auto;
+    }
+    
+    .gap-itens {
+        padding-bottom: 2rem;
+    }
+    
+    .estudos-card {
+        display: block;
+        align-items: center;
+    }
+
+    .estudos-card-design {
+        width: 50vw;
+        height: 22vh;
+        padding: 1rem 1rem;
+        background-color: #fff;
+        color: #1e1e1e;
+        margin: 1rem 1rem;
+        border-radius: 0.6rem;
+    }
+
+    .estudos-card-design:hover {
+        color: #000;
+        height: 22vh;
+        transition: .5s;
+    }
+}
+
+.scroll-button {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    position: fixed;
+    right: 5rem;
+    bottom: 5rem;
+    cursor: pointer;
+}
+
+.scroll-button:hover {
+    background-color: #fff;
+    border: 1px solid #0039cc;
+    box-shadow: 0rem 0rem 3rem 1rem #0039cc;
+    transition: .3s;
+}
+
+.scroll-seta {
+    width: 5.5rem;
+    height: 5.5rem;
+}
+
