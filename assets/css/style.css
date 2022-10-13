@@ -406,6 +406,7 @@ a {
     right: 5rem;
     bottom: 5rem;
     cursor: pointer;
+    background-color: #fff;
 }
 
 .scroll-button:hover {
